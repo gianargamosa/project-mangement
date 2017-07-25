@@ -1,0 +1,62 @@
+@import '../../stylesheets/variables';
+
+.add-note {
+  background-color: $accent-sec;
+  height: 2em;
+  margin-top: 10px;
+  margin-left: 1em;
+  padding: 0 1em;
+  width: 205px;
+
+  &:hover,
+  &:focus {
+    background-color: darken($accent-sec, 20%);
+  }
+}
+
+.notes-list {
+  list-style-type: none;
+  padding: 0 1em;
+}
+
+.note {
+  background-image: url('./drag-pattern.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  border-left: #00BCD4 2px solid !important;
+  border: #ddd 1px solid;
+  cursor: move;
+  margin: 3px 0;
+  border-radius: 3px !important;
+  padding: .5em 1em;
+  position: relative;
+
+  input {
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    cursor: text;
+  }
+
+  .editing {
+    border-bottom: 2px solid $accent;
+  }
+
+  .card-title {
+    margin-left: 5px;
+  }
+
+  .todo-items {
+    margin-left: 5px;
+  }
+
+  .delete {
+    color: rgba($gray-dark, .3);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 5px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    vertical-align: sub;
+  }
+}
